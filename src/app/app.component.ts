@@ -29,7 +29,12 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {}
+export class AppComponent {
+  loadedFeature = 'recipe'
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
+}
 
 // // 5챕터
 // import { Component } from '@angular/core';
