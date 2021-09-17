@@ -7,6 +7,7 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
+
   recipes: Recipe[] = [
     new Recipe(
       'Jisub',
@@ -19,12 +20,11 @@ export class RecipeListComponent implements OnInit {
       'https://images.twinkl.co.uk/tw1n/image/private/t_630/image_repo/4e/7b/au-t2-e-5093-pancake-recipe-english_ver_5.jpg'
     ),
   ];
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   onRecipeSelected(recipe: Recipe) {
-
     this.recipeWasSelected.emit(recipe);
   }
 }

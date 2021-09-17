@@ -16,13 +16,27 @@ import { GameControlComponent } from './game-control/game-control.component';
 import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
+import { DropDownDirective } from './shared/dropdown.directives';
 @NgModule({
   // declarations: [AppComponent, ServerComponent, ServersComponent],
-  declarations: [AppComponent, HeaderComponent, RecipesComponent, RecipeListComponent, RecipeDetailComponent, ShoppingListComponent, ShoppingEditComponent, CockpitComponent, ServerElementComponent, GameControlComponent, OddComponent,
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+    CockpitComponent,
+    ServerElementComponent,
+    GameControlComponent,
+    OddComponent,
     EvenComponent,
-    RecipeItemComponent],
+    RecipeItemComponent,
+    DropDownDirective,
+  ],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
