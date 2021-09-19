@@ -17,6 +17,10 @@ import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { DropDownDirective } from './shared/dropdown.directives';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { AppRoutingModule } from './app-routing.module';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 @NgModule({
   // declarations: [AppComponent, ServerComponent, ServersComponent],
   declarations: [
@@ -34,9 +38,11 @@ import { DropDownDirective } from './shared/dropdown.directives';
     EvenComponent,
     RecipeItemComponent,
     DropDownDirective,
+    RecipeStartComponent,
+    RecipeEditComponent,
   ],
-  imports: [BrowserModule, FormsModule],
-  providers: [],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
