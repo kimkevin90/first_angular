@@ -6,7 +6,7 @@ import {
   Output,
   ViewChild,
 } from '@angular/core';
-import { Ingredient } from 'src/app/shared/ingredient.model';
+import { Ingredient } from 'src/app-ex/shared/ingredient.model';
 import { ShoppingListService } from '../shopping-list.service';
 
 @Component({
